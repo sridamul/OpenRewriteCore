@@ -74,7 +74,6 @@ public class AbstractRewrite extends ConfigurableRewrite {
             Environment env = environment();
 
             assert activeRecipes != null;
-            System.out.println(env.listRecipes());
             Recipe recipe = env.activateRecipes(activeRecipes);
             if (recipe.getRecipeList().isEmpty()) {
                 logger.warn("No recipes were activated. ");
